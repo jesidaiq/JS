@@ -92,3 +92,21 @@ pato.setNombre = "Patito"; //llamo al metodo, lo utilizo.
 console.log (pato.getNombre);//Muestro el objeto despues de modificarlo. 
 
 
+class MarianaEnriquez {
+        constructor (libro, anio, cantPags) {
+                this.libro = libro;
+                this.anio = anio;
+                this.cantPags = cantPags
+        }
+}
+
+const libro1 = ("Nuestra parte de noche" , 2019, 667);
+const libro2 = ("Los peligros de fumar en la cama" , 2017,199);
+
+class Historias extends MarianaEnriquez {
+        constructor (libro, anio, cantPags, cantidadCuentos) {
+                super (libro, anio, cantPags) ;
+                this.cantidadCuentos = cantidadCuentos;
+}
+}
+ 
