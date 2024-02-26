@@ -11,10 +11,53 @@
 
          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+         <!--BOOTSTRAP-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                  crossorigin="anonymous">
+
 
 </head>
 
 <body>
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Poetas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Historias cortas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Poetas Clásicos
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pablo Neruda</a></li>
+                            <li><a class="dropdown-item" href="#"> Maria Zambrano</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+
+
          <p></p>
          <style>
                   * {
@@ -25,15 +68,20 @@
                            padding: 0;
                   }
 
+                  body {
+                           margin: 40px 20px;
+                  }
+
                   h1 {
                            font: 1.3em sans-serif;
                   }
 
                   h2 {
                            font-size: 1.1em;
-                           color: #fc4d81;
+                           color: #9e6274;
                            font-family: "Inter", sans-serif;
                   }
+
                   #ul-frutas {
                            list-style: none;
                            width: 90%;
@@ -49,6 +97,7 @@
                            display: inline-block;
                            width: 100%;
                            text-align: center;
+                           margin: 10px;
                   }
 
                   p {
@@ -62,6 +111,7 @@
                            margin: 20px;
                            text-align: center;
                   }
+
                   .fruta {
                            margin: 10px auto;
                            display: flex;
@@ -70,53 +120,94 @@
                            width: 30%;
                            font-weight: bold;
                   }
+
                   .fondo-celeste {
                            background-color: lightskyblue;
                            margin: 10px auto;
                   }
+
                   .fondo-rosa {
                            background-color: lightpink;
+                           font-size: 20px;
                   }
-
          </style>
 
          <main>
                   <div class="enRetrospectiva">
-                           <h1>En retrospectiva</h1>
+                           <h2>América, no invoco tu nombre en vano (Pablo Neruda)</h2>
                            <p class="p-a">
-                                    Tejemos un red en la infancia,<br>
-                                    Una red de soleado aire,
-                                    Creamos una primavera pequeña<br>
-                                    De agua pura y fresca.
-                                    En la juventud sembramos la semilla,<br>
-                                    Cortamos la vara del almendro,
-                                    Hemos crecido como el árbol añejo,<br>
-                                    ¿Nos hemos marchitado en el barro?
-                                    ¿Están desvanecidas, arruinadas, rotas?<br>
-                                    ¿Se han evaporado en la arcilla?
-                                    La vida es una sombra oscura;<br>
-                                    Y sus alegrías flotan rápido en la distancia.
+                                    AMÉRICA,
+                                    no invoco tu nombre en vano.
+                                    Cuando sujeto al corazón la espada,
+                                    cuando aguanto en el alma la gotera,
+                                    cuando por las ventanas
+                                    un nuevo día tuyo me penetra,
+                                    soy y estoy en la luz que me produce,
+                                    vivo en la sombra que me determina,
+                                    duermo y despierto en tu esencial aurora:
+                                    dulce como las uvas, y terrible,
+                                    conductor del azúcar y el castigo,
+                                    empapado en esperma de tu especie,
+                                    amamantado en sangre de tu herencia.
                            </p>
+                           <img id="p-a-img" width="300px" src="neruda_.jpg" alt="Descripción de la imagen">
+
+                           <h2 class="subt">El agua ensimismada (Maria Zambrano )</h2>
                            <p class="p-b">
-                                    ¡Desvanecidas! La red sigue siendo de aire,<br>
-                                    Y así como sus pliegues se estremecen
-                                    En extraños tonos de claro carmesí,<br>
-                                    Profundo es el resplandor de su penumbra;
-                                    Como la luz de un cielo italiano,<br>
-                                    Donde las nubes del ocaso duermen ociosas,
-                                    Perdiendo lentamente el brillo del rubí.<br>
+                                    (Para Edison Simons)
+                                    El agua ensimismada
+                                    piensa o sueña?
+                                    El árbol que se inclina buscando sus raíces,
+                                    el horizonte,
+                                    ese fuego intocado,
+                                    ¿se piensan o se sueñan?
+                                    El mármol fue ave alguna vez;
+                                    el oro, llama;
+                                    el cristal, aire o lágrima.
+                                    ¿Lloran su perdido aliento?
+                                    ¿Acaso son memoria de sí mismos
+                                    y detenidos se contemplan ya para siempre?
+                                    Si tú te miras, ¿qué queda?
+                           </p>
+                           <h2 class="subt">Síndrome (Mario Benedetti) </h2>
+                           <p class="p-c">
+                                    Todavía tengo casi todos mis dientes
+                                    casi todos mis cabellos y poquísimas canas
+                                    puedo hacer y deshacer el amor
+                                    trepar una escalera de dos en dos
+                                    y correr cuarenta metros detrás del ómnibus
+                                    o sea que no debería sentirme viejo
+                                    pero el grave problema es que antes
+                                    no me fijaba en estos detalles.
+                           </p>
+                           <h2 class="subt">A un general (Julio Cortázar) </h2>
+                           <p class="p-d">
+                                    Región de manos sucias de pinceles sin pelo
+                                    de niños boca abajo de cepillos de dientes
+                                    Zona donde la rata se ennoblece
+                                    y hay banderas innúmeras y cantan himnos
+                                    y alguien te prende, hijo de puta,
+                                    una medalla sobre el pecho
+                                    Y te pudres lo mismo.
                            </p>
                   </div>
 
                   <div id="contenedor">
-                           <h1 id="titulo">Frutas</h1>
+                           <h1 id="titulo" class="tit">Frutas</h1>
+                           <h2 id="subt"> Autores </h2>
                            <ul id="ul-frutas">
-                                    <li class="fruta fruta-fr fondo-celeste"> 🍓Strawberry</li>
-                                    <li class="fruta fruta-ban fondo-rosa">🍌Banana</li>
-                                    <li class="fruta fruta-man fondo-celeste">🍏Manzana</li>
-                                    <li class="fruta fruta-uva fondo-rosa">🫐Arandanos </li>
+                                    <li class="fruta fruta-fr fondo-celeste">🍓</li>
+                                    <li class="fruta fruta-ban fondo-rosa">Maria Zambrano</li>
+                                    <li class="fruta fruta-man fondo-celeste">🍏t ram cula? ana</li>
+                                    <li class="fruta fruta-arandano fondo-rosa">🫐Arandanos </li>
                            </ul>
+                           <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ea eius ullam,
+                                    doloribus illo quidem in, corporis quisquam eligendi nemo magnam aut quas voluptate
+                                    totam reiciendis consequatur nobis cupiditate alias.
+                           </p>
                   </div>
+                  <a href="www" class="a"> 🌐 Pagina web</a>
          </main>
 
 
@@ -125,7 +216,12 @@
 
 <!-- Javascript -->
 <script src="dom.js">
-
 </script>
+
+
+<!-- bvootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"></script>
 
 </html>
