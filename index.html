@@ -89,7 +89,7 @@
                            flex-wrap: wrap;
                            flex-direction: column;
                            margin: 10px auto;
-                           background-color: rgb(203, 243, 203);
+                           background-color: #c0a3c0;
                            border: 2px solid greenyellow;
                   }
 
@@ -107,7 +107,7 @@
                   .div-a {
                            width: 100px;
                            height: 100px;
-                           background-color: rgb(184, 245, 242);
+                           background-color: rgb(2, 199, 189);
                            margin: 20px;
                            text-align: center;
                   }
@@ -117,25 +117,32 @@
                            display: flex;
                            justify-content: center;
                            padding: 20px;
-                           width: 30%;
+                           width: 50%;
                            font-weight: bold;
+                           text-align: center;
                   }
 
                   .fondo-celeste {
-                           background-color: lightskyblue;
-                           margin: 10px auto;
+                           background-color: rgb(4, 213, 255);
                   }
 
                   .fondo-rosa {
-                           background-color: lightpink;
-                           font-size: 20px;
+                           background-color: rgb(255, 4, 230);
+                  }
+                  .js-clase {
+                    outline: 5px solid lightyellow;
+                    background-color: #c0bbc0;
+                  }
+                  .js-claseDos {
+                    outline: 5px solid lightyellow;
+                    background-color: lightblue;
                   }
          </style>
 
          <main>
                   <div class="enRetrospectiva">
                            <h2>América, no invoco tu nombre en vano (Pablo Neruda)</h2>
-                           <p class="p-a">
+                           <p class="p-a poemaM">
                                     AMÉRICA,
                                     no invoco tu nombre en vano.
                                     Cuando sujeto al corazón la espada,
@@ -150,7 +157,7 @@
                                     empapado en esperma de tu especie,
                                     amamantado en sangre de tu herencia.
                            </p>
-                           <img id="p-a-img" width="300px" src="neruda_.jpg" alt="Descripción de la imagen">
+                           <img id="p-a-img" width="300px" src="neruda_2.jpg" alt="Descripción de la imagen">
 
                            <h2 class="subt">El agua ensimismada (Maria Zambrano )</h2>
                            <p class="p-b">
@@ -195,24 +202,18 @@
                   <div id="contenedor">
                            <h1 id="titulo" class="tit">Frutas</h1>
                            <h2 id="subt"> Autores </h2>
+                           <!--Comenatrio -->
                            <ul id="ul-frutas">
-                                    <li class="fruta fruta-fr fondo-celeste">🍓</li>
-                                    <li class="fruta fruta-ban fondo-rosa">Maria Zambrano</li>
-                                    <li class="fruta fruta-man fondo-celeste">🍏t ram cula? ana</li>
-                                    <li class="fruta fruta-arandano fondo-rosa">🫐Arandanos </li>
+                                    <li class="fruta fruta-fr fondo-celeste" onclick ="clic('Poe')">🍓</li>
+                                    <li class="fruta fruta-ban fondo-rosa" onclick ="clic('Zambrano')">Maria Zambrano</li>
+                                    <li class="fruta fruta-man fondo-celeste" onclick ="clic('Benedetti')">🍏t ram cula? ana</li>
+                                    <li class="fruta fruta-arandano fondo-rosa" onclick ="clic('Borges')">🫐Arandanos </li>
                            </ul>
-                           <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ea eius ullam,
-                                    doloribus illo quidem in, corporis quisquam eligendi nemo magnam aut quas voluptate
-                                    totam reiciendis consequatur nobis cupiditate alias.
-                           </p>
                   </div>
                   <a href="www" class="a"> 🌐 Pagina web</a>
          </main>
 
-
-
-</body>
+</body>h
 
 <!-- Javascript -->
 <script src="dom.js">
