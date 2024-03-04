@@ -1,0 +1,50 @@
+/* Estilos generales */
+
+* {
+         margin: 0;
+         padding: 0;
+         font-family: "Nunito Sans", sans-serif;
+         font-size: 18px;
+}
+
+body {
+         height: 100vh;
+         background-color: #FF339D;
+}
+
+.centrar-flex {
+         display: flex;
+         justify-content: center;
+         align-items: center; /* alinear los elem secundarios a lo largo del eje transversal*/
+}
+
+#contenedor { /*nombre color y boton*/
+         height: 220px;
+         width: 450px;
+         background-color: white;
+         flex-wrap: wrap;
+         flex-direction: column;
+}
+
+#contenedor p {
+         font-size: 4em;
+         font-weight: bold;
+}
+
+#button-style {
+         font-size: 1.3em;
+         padding: 5px 7px;
+         border-radius: 10px;
+         border: 3px solid gray;
+         transition-duration: 0.3s;
+         cursor: pointer;
+     }
+     
+     #button-style:hover {
+         font-size: 1.4em;
+         padding: 5px 7px;
+         border: 3px solid rgb(143, 140, 140);
+     }
+     
+
+

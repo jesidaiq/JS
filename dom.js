@@ -172,8 +172,8 @@ console.log (subtituo.nextSibling) //hermano, mismo nivel siguiente  del NODO (i
 
 /*Funcion event handler */
 
-function clic (apellido){
-    console.log ('Elegiste a : ' + apellido)
+function mostrarClic (e){
+    console.log (e.target.innerText) //Target es el elemento HTML específico que desencadenó el evento.
 }
 
 
@@ -181,18 +181,19 @@ function clic (apellido){
 /** Add event listener */
 
 
+const liPoe = document.getElementById('idPoe');
+
+liPoe.addEventListener('click', mostrarClic); 
 
 
 
+const listaUl = document.getElementsByClassName('fruta')
+console.log (listaUl)
 
-
-
-
-
-
-
-
-
+for (i of listaUl) {
+    console.log (i);
+    i.addEventListener('click', mostrarClic) ; 
+}
 
 
 
