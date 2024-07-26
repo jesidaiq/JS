@@ -184,6 +184,6 @@ let objetoPersona = {
   },
 };
 
-let personita = new objetoPersona ;
+let personita = objetoPersona ;
 
 console.log("FIN")
