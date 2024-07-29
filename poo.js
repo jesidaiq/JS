@@ -1,10 +1,15 @@
 /**
  * Conceptos basicos
- * Abstraccion: identificar y separar las características más importantes de un objeto, ignorando detalles innecesarios. Ayuda a centrarse en lo esencial y a crear modelos más manejables.
- * modularidad: dividir el código en módulos o partes más pequeñas y manejables. Cada módulo tiene una función específica y puede ser desarrollado, probado y mantenido de forma independiente.
- * encapsulamiento: Implica ocultar los detalles internos de la implementación de una clase y proporcionar una interfaz clara para interactuar con el objeto. Se logra mediante el uso de modificadores de acceso (como públicos y privados) para controlar el acceso a los atributos y métodos de una clase.
- * polomorfismo: Permite que objetos de la misma clase puedan comportarse de manera diferente. Puede manifestarse en dos formas: polimorfismo de tiempo de compilación (o estático) y polimorfismo de tiempo de ejecución (o dinámico).
- * */
+ * Abstraccion: identificar y separar las características más importantes de un objeto,
+ * ignorando detalles innecesarios.  Ayuda a centrarse en lo esencial y a crear modelos más manejables.
+ * modularidad: dividir el código en módulos o partes más pequeñas y manejables. Cada módulo tiene una función específica y 
+ * puede ser desarrollado, probado y mantenido de forma independiente. 
+ * encapsulamiento: Implica ocultar los detalles internos de la implementación de una clase y proporcionar una interfaz clara para
+ * interactuar con el objeto. Se logra mediante el uso de modificadores de acceso (como públicos y privados) para controlar el acceso a 
+ * los atributos y métodos de una clase.
+ * polomorfismo: Permite que objetos de la misma clase puedan comportarse de manera diferente. Puede manifestarse en dos formas: polimorfismo 
+ * de tiempo de compilación (o estático) y polimorfismo de tiempo de ejecución (o dinámico).
+ * **/
 
 
 class Animal {
@@ -13,7 +18,7 @@ class Animal {
     this.raza = raza;
     this.edad = ed;
     this.color = col;
-    this.informacion = `Soy un ${this.raza} y tengo ${this.edad} años.`; //esto se va actualizar con cadad atributo del objeto
+    this.informacion = `Soy un ${this.raza} y tengo ${this.edad} años.`;//esto se va actualizar con cadad atributo del objeto
   }
   verInfor() {
     // Metodo/ funcion especifica del objeto
@@ -170,8 +175,8 @@ function leerNro(msj) {
   return parseInt(prompt(msj));
 }
 
-let unNumero = leerNro("Ingresa");
-alert(` El numero ingresado es ${unNumero}`);
+//let unNumero = leerNro("Ingresa");
+//console.log(` El numero ingresado es ${unNumero}`);
 
 let objetoPersona = {
   nombre: "Carlos",
@@ -184,6 +189,68 @@ let objetoPersona = {
   },
 };
 
-let personita = objetoPersona ;
+let personita = objetoPersona 
+
+let vectorColores = []
+
+vectorColores.push('Red')
+console.log(vectorColores[0])
+console.log (`The color ${vectorColores[0]} is the at the first index of the array `);
+
+
+vectorColores.push('White')
+console.log(vectorColores[1])
+console.log (`The color ${vectorColores[1]} is the at the first index of the array `)
+
+
+vectorColores.push('Purple', 'Blue', 'Green')
+console.log(vectorColores)
 
 console.log("FIN")
+
+for (let index = 0; index < vectorColores.length; index++) {
+  let element =  vectorColores[index];
+  console.log(`El elemento mostrado desde variable: ${element.toUpperCase()}`);
+  console.log(`El elemento  mostrado desde vector: ${vectorColores[index]}`);
+}
+
+//Fiultrar datos 
+const ingredientes = [  //array con obetos dentro
+  { fruta: 'banana', color: 'Yellow' }, //objeto 0
+  { fruta: 'manzana', color: 'Red' },
+  { fruta: 'naranja', color: 'Orange' },
+  { fruta: 'uva', color: 'Purple' },
+  { fruta: 'kiwi', color: 'Green' },
+  { fruta: 'fresa', color: 'Red' },
+  { fruta: 'pera', color: 'Green' },
+  { fruta: 'limón', color: 'Yellow' },
+  { fruta: 'mango', color: 'Orange' },
+  { fruta: 'arándano', color: 'Blue' },
+  { fruta: 'cereza', color: 'Red' },
+  { fruta: 'durazno', color: 'Orange' },
+  { fruta: 'sandía', color: 'Green' },
+  { fruta: 'frambuesa', color: 'Red' },
+  { fruta: 'piña', color: 'Yellow' },
+  { fruta: 'melón', color: 'Green' },
+  { fruta: 'ciruela', color: 'Purple' },
+  { fruta: 'mora', color: 'Purple' },
+  { fruta: 'papaya', color: 'Orange' },
+  { fruta: 'grosella', color: 'Red' }
+];
+
+console.log(ingredientes);
+console.log(ingredientes[0].color);
+
+//Imperativo 
+
+for (let index = 0; index < ingredientes.length; index++) {
+  const element = ingredientes[index].color;
+  if (element == 'Yellow') {
+    console.log( ` Frutas Yellow : ${ingredientes[index].fruta}`)
+    element.push(element)
+    console.log(element[index])
+  }
+}
+
+
+console.log ('FIIN')
